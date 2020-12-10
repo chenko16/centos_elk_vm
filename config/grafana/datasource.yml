@@ -1,0 +1,14 @@
+# config file version
+apiVersion: 1
+
+datasources:
+  - name: Elasticsearch
+    type: elasticsearch
+    access: direct
+    database: count
+    editable: true
+    url: http://localhost:9200
+    jsonData:
+      interval: Daily
+      timeField: "@timestamp"
+      esVersion: 70
